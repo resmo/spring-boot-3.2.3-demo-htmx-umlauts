@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+<h1>Demo</h1>
+<h2>Test 1 plain (works as expected)</h2>
+<div hx-get="/umlauts" hx-trigger="click">Click me to get some umlauts</div>
+
+<h2>Test 2 htmx-spring-boot (breaks with spring boot 3.2.3, but not 3.2.2)</h2>
+<div hx-get="/umlauts2" hx-trigger="click">Click me to get some umlauts</div>
+
+</body>
+</html>
